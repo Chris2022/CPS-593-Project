@@ -1,2 +1,2 @@
 # CPS-593-Project
-This is a git repository for my project in my Web Development Course at SUNY New Paltz
+This Git Repository is for my project that I will be working on for the Spring 2022 Semester in CPS 593: Web Development at the State University of New York at New Paltz
