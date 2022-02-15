@@ -1,10 +1,7 @@
-# CPS-593-Project
-***This Git Repository is for my project that I will be working on for the Spring 2022 Semester in CPS 593: Web Development at the State University of New York at New Paltz***
-
-**This text file contains a short description about what I plan on doing for this project.**
+This text file contains a short description about what I plan on doing for this project.
 
 
-Current Idea:
+Idea:
 
 My current idea is to create a task management web application. My end goal is to make a very simple 
 (to-use) and optimal task management application. This task managemen application can be used by 
@@ -17,9 +14,5 @@ improve their productivity and decrease stress by creating an application that c
 of various projects, duties, and tasks. My goal is for this application to help users of all ages and who have
 various types of responsibilites, tasks, and projects. My biggest goal is to keep this application simple to
 use, but to handle any kind of task or project a user may throw at it.
-
-
-
-
 
 
