@@ -13,8 +13,7 @@ header h2{
 header .navbar{
     margin-left: 500px;
     margin-right: 500px;
-    margin-top: 10px;
-    padding: 10px 10px;
+    margin-bottom: -25px;
 }
 .background-image{
     background-image: url(../images/schedule.jpeg);
@@ -38,6 +37,10 @@ header .navbar{
 }
 h1{
     text-align: center;
+}
+#LOGIN{
+    width: 60%;
+    padding-bottom: 20px;
 }
 .card{
     display: inline-block;
@@ -78,6 +81,10 @@ h1{
 }
 button a{
     color: white;
+}
+#SIGN-UP{
+    width: 60%;
+    padding-bottom: 20px;
 }
 #time{
     animation-iteration-count:infinite;
