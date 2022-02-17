@@ -13,18 +13,24 @@ header .navbar{
     background-attachment: fixed;
 }
 .footer{
-    position:absolute;
-
-    width:100%;
-    height:20px;
+    height: 10px;
     background-color: lightgray;
+}
+.footer div{
+    margin: auto;
+    padding: 0;
+}
+.footer{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 h1{
     text-align: center;
 }
 .card{
     display: inline-block;
-    width: 30%;
+    width: 50%;
     padding: 5px;
 }
 #BUTTON{
@@ -34,12 +40,36 @@ h1{
 .container{
     text-align: center;
 }
+
 .outer figure img{
-    width: 50%;
+    width: 100%;
+}
+.outer h1{
+    padding-top:100px ;
+}
+.outer p{
+    padding-top: 10px;
+    font-size: x-large;
 }
 .outer{
     background-color: whitesmoke;
+    padding-top: 50px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.content{
+    padding-top: 30px;
+    margin: 30px 30px;
+    text-align: center;
+}
+button a{
+    color: white;
+}
+#time{
+    animation-iteration-count:infinite;
+    animation-duration:10s;
+
 }
