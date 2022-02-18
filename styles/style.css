@@ -5,7 +5,7 @@ body{
     margin: 0;;
 }
 header h1{
-    padding-top: 20px;
+    padding-top: 15px;
     font-family:Arial, Helvetica, sans-serif;
 }
 header h2{
@@ -18,6 +18,13 @@ header .navbar{
     margin-right: 500px;
     margin-bottom: -25px;
 }
+body hr{
+    margin: 1.5rem 0;
+    margin-top: 1.5rem;
+    margin-right: 0px;
+    margin-bottom: 1.5rem;
+    margin-left: 0px;
+}
 .background-image{
     background-image: url(../images/schedule.jpeg);
     height: 500px;
@@ -25,13 +32,13 @@ header .navbar{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-/* .BACK-IMAGE{
-    background-image: url(../images/schedule2.jpeg);
-    height: 700px;
+.BACK-IMAGE{
+    background-image: url(../images/schedule3.jpeg);
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-} */
+}
 .footer{
     height: 10px;
     background-color: lightgray;
@@ -56,6 +63,9 @@ h1{
     display: inline-block;
     width: 50%;
     padding: 5px;
+}
+label{
+    margin:0 ;
 }
 #BUTTON{
     padding-top: 10px;
@@ -102,8 +112,6 @@ button a{
 
 }
 .ABOUT1{
-    padding-top: 20px;
-    margin: 0 auto;
     width: 100%;
     height: 150px;
     background-color: whitesmoke;
@@ -114,17 +122,22 @@ button a{
     text-align: center;
 }
 .ABOUT-P2{
-    padding-top: 20px;
     font-size: larger;
 }
 .ABOUT-P2 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+    color: white;
+    padding-top: 80px ;
     margin: 0 auto;
-    width: 40%;
+    width: 50%;
     text-align: center;
 }
 .ABOUT3{
     padding-top: 20px;
     background-color: whitesmoke;
     text-align: center;
+}
+.ABOUT3 h1{
+    font-size: 30px;
 }
