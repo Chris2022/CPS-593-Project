@@ -1,4 +1,6 @@
-/* Global */
+/****************************/
+/********** Global **********/
+/****************************/
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,15 +15,18 @@ body hr{
 label{
     margin:0 ;
 }
-/* Navigation */
+/****************************/
+/********** NAVIGATION **********/
+/****************************/
 .navbar{
     height: 100px;
 }
 .navbar .navbar-brand #TITLE-ONE{
-
     text-align: center;
 }
-/* About Page */
+/****************************/
+/********** ABOUT **********/
+/****************************/
 .about-content .ABOUT1 h1{
     text-align: center;
 }
@@ -40,7 +45,7 @@ label{
     font-size: larger;
 }
 .ABOUT-P2 p{
-    font-weight: 500;
+    font-weight: 700;
     font-size: x-large;
     color: white;
     padding-top: 80px ;
@@ -56,11 +61,19 @@ label{
 .ABOUT3 h1{
     font-size: 30px;
 }
-
-/* Home Page */
-.background-image{
-    background-image: url(../images/schedule.jpeg);
+.BACK-IMAGE{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/schedule3.jpeg);
     height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/****************************/
+/********** HOME **********/
+/****************************/
+.background-image{
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/schedule.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,13 +86,14 @@ label{
 #time{
     animation-iteration-count:infinite;
     animation-duration:10s;
+    text-decoration: underline;
 }
 .home-content .background-image h1{
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 700;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .outer figure img{
     width: 100%;
@@ -105,7 +119,9 @@ label{
     margin: 30px 30px;
     text-align: center;
 }
-/* Footer */
+/****************************/
+/********** FOOTER **********/
+/****************************/
 .footer{
     height: 10px;
     background-color: lightgray;
@@ -119,18 +135,25 @@ label{
     padding: 0;
     text-align: center;
 }
-
-.BACK-IMAGE{
-    background-image: url(../images/schedule3.jpeg);
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+/****************************/
+/********** LOGIN **********/
+/****************************/
 #LOGIN{
     width: 60%;
     padding-bottom: 20px;
 }
+/****************************/
+/********** SIGN UP **********/
+/****************************/
+#SIGN-UP{
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+/****************************/
+/********** MISC **********/
+/****************************/
+/* MISC: have to figure out where these are located in*/
 .card{
     display: inline-block;
     width: 50%;
@@ -144,12 +167,6 @@ label{
 .container{
     text-align: center;
 }
-
-
 button a{
     color: white;
-}
-#SIGN-UP{
-    width: 60%;
-    padding-bottom: 20px;
 }
