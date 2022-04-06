@@ -1,155 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css" type="text/css" media="screen">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/Task Bud Logo.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://kit.fontawesome.com/8132dde659.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../styles/style.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/Task Bud Logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8132dde659.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Task Bud | Sign Up</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <h1 class="title is-3 animate__animated animate__fadeInLeft">Welcome to Task Bud</h1>
-      <h2 class="subtitle animate__animated animate__fadeInRight" >Say No To Procrastination!</h2>
-        <nav class="navbar">
-            <div class="navbar-brand">
-              <a class="navbar-item; is-size-2" href="../docs/index.html">
-                <img src="../images/Task Bud Logo.png" width="80" height="10">
-              </a>
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
+      <nav class="navbar" id="NAVBAR">
+        <div class="navbar-brand">
+          <a class="navbar-item; is-size-2" href="../docs/index.html">
+            <img src="../images/Task Bud Logo.png" width="80" height="10" />
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="../docs/about.html"> About </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link"> More </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item"> Contact </a>
+                <hr class="navbar-divider" />
+                <a class="navbar-item"> FAQ's </a>
+              </div>
             </div>
-          
-            <div class="navbar-menu">
-              <div class="navbar-start">
-                <a class="navbar-item" href="../docs/about.html">
-                  About
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-link" href="../docs/register.html">
+                  <strong>Sign up</strong>
                 </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">
-                    More
-                  </a>
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                      Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        FAQ's
-                    </a>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="navbar-end">
-                <div class="navbar-item">
-                  <div class="buttons">
-                    <a class="button is-link">
-                      <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light" href="../docs/login.html">
-                      Log in
-                    </a>
-                  </div>
-                </div>
+                <a class="button is-light" href="../docs/login.html">
+                  Log in
+                </a>
               </div>
             </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="container" id="SIGN-UP">
-        <div class="card">
-            <h1 class="title is-3 animate__animated animate__fadeInLeft">Start Boosting your productivity today!</h1>
-            <div class="card-content">
-                <form action="../docs/index.html">
-                    <div class="field">
-                        <label class="label">First Name: </label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Enter Your First Name">
-                        </div>
-                        <label class="label">Last Name: </label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Enter Your Last Name">
-                        </div>
-                        <label class="label">Username:</label>
-                        <div class="control has-icons-left has-icons-right">
-                          <input class="input" type="text" placeholder="Enter Your Username">
-                          <span class="icon is-small is-left">
-                            <i class="fas fa-user"></i>
-                          </span>
-                          <span class="icon is-small is-right">
-                            <i class="fas fa-check"></i>
-                          </span>
-                        </div>
-                        <div class="control">
-                            <label class="label">Enter Birthdate:</label>
-                            <input type="date">
-                        </div>
-                        <div class="control">
-                            <label class="checkbox">
-                              <input type="checkbox">
-                              I agree to the <a href="#">terms and conditions</a>
-                            </label>
-                          </div>
-                          <div class="control">
-                            <label class="radio">
-                              <input type="radio" name="question">
-                              Yes
-                            </label>
-                            <label class="radio">
-                              <input type="radio" name="question">
-                              No
-                            </label>
-                          </div>
-                          <div class="field is-grouped" id="BUTTON">
-                            <div class="control">
-                              <button class="button is-link">Submit</button>
-                            </div>
-                            <div class="control">
-                              <button class="button is-link is-light">Cancel</button>
-                            </div>
-                          </div>
-                      </div>
-                </form>
+      <div class="card">
+        <h1 class="title is-3 animate__animated animate__fadeInLeft">
+          Start Boosting your productivity today!
+        </h1>
+        <div class="card-content">
+          <form action="../docs/index.html">
+            <div class="field">
+              <label class="label">First Name: </label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Enter Your First Name"
+                />
+              </div>
+              <label class="label">Last Name: </label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Enter Your Last Name"
+                />
+              </div>
+              <label class="label">Username:</label>
+              <div class="control has-icons-left has-icons-right">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Enter Your Username"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="icon is-small is-right">
+                  <i class="fas fa-check"></i>
+                </span>
+              </div>
+              <div class="control">
+                <label class="label">Enter Birthdate:</label>
+                <input type="date" />
+              </div>
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  I agree to the <a href="#">terms and conditions</a>
+                </label>
+              </div>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="question" />
+                  Yes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="question" />
+                  No
+                </label>
+              </div>
+              <div class="field is-grouped" id="BUTTON">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light">Cancel</button>
+                </div>
+              </div>
             </div>
+          </form>
         </div>
+      </div>
     </main>
 
-
     <footer class="footer">
-        <div class="content has-text-centered">
-            <p class="icons">
-                <button class="button is-link">
-                    <span class="icon">
-                      <i class="fab fa-twitter"></i>
-                    </span>
-                  </button>
-                  <button class="button is-link">
-                    <span class="icon">
-                      <i class="fab fa-facebook-f"></i>
-                    </span>
-                  </button>
-                  <button class="button is-link">
-                    <span class="icon">
-                      <i class="fab fa-instagram"></i>
-                    </span>
-                  </button>
-                  <button class="button is-link">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                  </button>
-            </p>
-            <p>
-              Copyright 2022 &copy; Task Bud, Inc. All rights reserved by Chris Tejada.
-            </p>
-        </div>
-      </footer>
-</body>
+      <div class="content has-text-centered">
+        <p class="icons">
+          <button class="button is-link">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </button>
+          <button class="button is-link">
+            <span class="icon">
+              <i class="fab fa-facebook-f"></i>
+            </span>
+          </button>
+          <button class="button is-link">
+            <span class="icon">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </button>
+          <button class="button is-link">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+          </button>
+        </p>
+        <p>
+          Copyright 2022 &copy; Task Bud, Inc. All rights reserved by Chris
+          Tejada.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
