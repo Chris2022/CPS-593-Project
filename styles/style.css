@@ -149,6 +149,18 @@ label{
     width: 60%;
     padding-bottom: 20px;
 }
+/****************************/
+/********** CONTACT **********/
+/****************************/
+.main-contact .container-content{
+    padding-top: 0px;
+}
+.main-contact .columns .column .card{ 
+    width: 100%;
+}
+.main-contact .columns .column .card .card-content .content .field label{
+    text-align: left;
+}
 
 /****************************/
 /********** MISC **********/
