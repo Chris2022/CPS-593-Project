@@ -322,7 +322,7 @@ main{
     color: #fff;
 }
 
-/* Recent Projects */
+/* Recent Projects, will use JS*/
 .recent-grid{
     margin-top: 3.5rem;
     display: grid;
