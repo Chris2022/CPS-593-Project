@@ -21,6 +21,11 @@ label {
   color: #777;
   padding-left: 3px
 }
+h4 {
+  letter-spacing: -1px;
+  font-weight: 400
+}
+
 /****************************/
 /********** NAVIGATION **********/
 /****************************/
@@ -220,7 +225,7 @@ label {
 .sidebar-menu li {
   width: 313.5px;
   margin-bottom: 1.3rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 .sidebar-menu a {
   text-decoration: none;
@@ -262,14 +267,14 @@ label {
   padding: 1rem;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   left: 345px;
-  width: calc(100% - 370px);
+  width: calc(100% - 345px);
   top: 0;
   z-index: 100;
   color: #222;
   transition: left 300ms;
 }
 #nav-toggle:checked + .sidebar {
-  width: 70px;
+  width: 90px;
 }
 #nav-toggle:checked + .sidebar .sidebar-brand,
 #nav-toggle:checked + .sidebar li {
@@ -286,15 +291,15 @@ label {
   display: none;
 }
 #nav-toggle:checked ~ .main-content {
-  margin-left: 70px;
+  margin-left: 90px;
 }
 #nav-toggle:checked ~ .main-content .head {
-  width: calc(100% - 100px);
-  left: 70px;
+  width: calc(100% - 90px);
+  left: 90px;
 }
 #nav-toggle:checked + .sidebar .sidebar-menu li {
   transition: width 310ms;
-  width: 57px;
+  width: 58.5px;
 }
 #nav-toggle +.sidebar .sidebar-menu li {
   transition: width 300ms;
@@ -451,26 +456,12 @@ tr td:last-child {
   padding-top: 60px;
 }
 
-
-/****************************/
-/********** Main Profile **********/
-/****************************/
-.profile-main{
-  padding-left: 20px;
-  padding-top: 60px;
-}
-
 .wrapper {
     padding: 30px 50px;
     border: 1px solid #ddd;
     border-radius: 15px;
     margin: 10px auto;
     max-width: 600px
-}
-
-h4 {
-    letter-spacing: -1px;
-    font-weight: 400
 }
 
 .img {
@@ -493,7 +484,6 @@ h4 {
 #deactivate b {
     font-size: 14px
 }
-
 
 .form-control {
     border-radius: 10px
@@ -544,6 +534,14 @@ select:focus {
 .danger:hover {
     background-color: #e20404;
     color: #fff
+}
+
+/****************************/
+/********** Main Profile **********/
+/****************************/
+.profile-main{
+  padding-left: 20px;
+  padding-top: 60px;
 }
 
 /****************************/
