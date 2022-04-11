@@ -280,6 +280,11 @@ label {
   transition: width 310ms;
   width: 57px;
 }
+#nav-toggle +.sidebar .sidebar-menu li {
+  transition: width 300ms;
+}
+
+
 .head label span {
   font-size: 1.7rem;
   padding-right: 1rem;
@@ -354,7 +359,6 @@ label {
 .card-single:last-child div:first-child span {
   color: #fff;
 }
-
 /* Recent Projects, will use JS*/
 .recent-grid {
   margin-top: 3.5rem;
@@ -423,6 +427,14 @@ tr td:last-child {
   width: 100%;
   overflow-x: auto;
 }
+/****************************/
+/********** Main Projects **********/
+/****************************/
+
+
+
+
+
 
 /****************************/
 /********** MISC **********/
@@ -443,4 +455,29 @@ tr td:last-child {
 }
 button a {
   color: white;
+}
+
+/* Wanted to created smooth transitions 
+between tabs but could not figure that out
+so created separate pages and so found some JS 
+css animation to use */
+.animate-in {
+  -webkit-animation: fadeIn 30s ease-in;
+  animation: fadeIn 39s ease-in;
+}
+
+.animate-out {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
