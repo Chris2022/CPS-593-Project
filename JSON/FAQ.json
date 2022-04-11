@@ -1,0 +1,54 @@
+[
+    {
+        "question":"How much is Task Bud?",
+        "Answer": "Task Bud is completely free and offers premium resourcs at no charge!"
+    },
+    {
+        "question":"How do I get started?",
+        "Answer": "Sign up for an account and start adding tasks to your to-do list!"
+    },
+    {
+        "question":"How do I add tasks?",
+        "Answer": "Simply click on the 'Add Task' button and enter your task details!"
+    },
+    {
+        "question":"How do I edit tasks?",
+        "Answer": "Click on the task you wish to edit and click on the 'Edit' button!"
+    },
+    {
+        "question":"How do I delete tasks?",
+        "Answer": "Click on the task you wish to delete and click on the 'Delete' button!"
+    },
+    {
+        "question":"How do I mark tasks as complete?",
+        "Answer": "Click on the task you wish to mark as complete and click on the 'Mark as Complete' button!"
+    },
+    {
+        "question":"How do I mark tasks as incomplete?",
+        "Answer": "Click on the task you wish to mark as incomplete and click on the 'Mark as Incomplete' button!"
+    },
+    {
+        "question":"How do I view tasks?",
+        "Answer": "Click on the 'View Tasks' button and you will be taken to a page where you can view all of your tasks!"
+    },
+    {
+        "question":"How do I view completed tasks?",
+        "Answer": "Click on the 'View Completed Tasks' button and you will be taken to a page where you can view all of your completed tasks!"
+    },
+    {
+        "question":"How do I view tasks by category?",
+        "Answer": "Click on the 'View Tasks by Category' button and you will be taken to a page where you can view all of your tasks by category!"
+    },
+    {
+        "question":"How do I view completed tasks by category?",
+        "Answer": "Click on the 'View Completed Tasks by Category' button and you will be taken to a page where you can view all of your completed tasks by category!"
+    },
+    {
+        "question":"How do I view tasks by date?",
+        "Answer": "Click on the 'View Tasks by Date' button and you will"
+    },
+    {
+        "question":"How do I get started?",
+        "Answer": "Sign up for an account and start adding tasks to your to-do list!"
+    }
+]
