@@ -1,0 +1,29 @@
+{
+  "name": "cps-593-project",
+  "version": "1.0.0",
+  "description": "Task management app called Task Bud",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris2022/CPS-593-Project.git"
+  },
+  "author": "Chris Tejada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chris2022/CPS-593-Project/issues"
+  },
+  "homepage": "https://github.com/Chris2022/CPS-593-Project#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

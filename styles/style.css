@@ -19,11 +19,11 @@ label {
   font-size: 14px;
   font-weight: 500;
   color: #777;
-  padding-left: 3px
+  padding-left: 3px;
 }
 h4 {
   letter-spacing: -1px;
-  font-weight: 400
+  font-weight: 400;
 }
 
 /****************************/
@@ -301,10 +301,9 @@ h4 {
   transition: width 310ms;
   width: 58.5px;
 }
-#nav-toggle +.sidebar .sidebar-menu li {
+#nav-toggle + .sidebar .sidebar-menu li {
   transition: width 300ms;
 }
-
 
 .head label span {
   font-size: 1.7rem;
@@ -451,102 +450,110 @@ tr td:last-child {
 /****************************/
 /********** Main Projects **********/
 /****************************/
-.projects-main{
+.projects-main {
   padding-left: 20px;
   padding-top: 60px;
 }
 
 .wrapper {
-    padding: 30px 50px;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    margin: 10px auto;
-    max-width: 600px
+  padding: 30px 50px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 10px auto;
+  max-width: 600px;
 }
 
 .img {
-    width: 70px;
-    height: 70px;
-    border-radius: 6px;
-    object-fit: cover
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 #img-section p,
 #deactivate p {
-    font-size: 12px;
-    color: #777;
-    margin-bottom: 10px;
-    text-align: justify
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 #img-section b,
 #img-section button,
 #deactivate b {
-    font-size: 14px
+  font-size: 14px;
 }
 
 .form-control {
-    border-radius: 10px
+  border-radius: 10px;
 }
 
 input[placeholder] {
-    font-weight: 500
+  font-weight: 500;
 }
 
 .form-control:focus {
-    box-shadow: none;
-    border: 1.5px solid #0779e4
+  box-shadow: none;
+  border: 1.5px solid #0779e4;
 }
 
 select {
-    display: block;
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    height: 40px;
-    padding: 5px 10px
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 40px;
+  padding: 5px 10px;
 }
 
 select:focus {
-    outline: none
+  outline: none;
 }
 
 .button {
-    background-color: #fff;
-    color: #0779e4
+  background-color: #fff;
+  color: #0779e4;
 }
 
 .button:hover {
-    background-color: #0779e4;
-    color: #fff
+  background-color: #0779e4;
+  color: #fff;
 }
 
 .btn-primary {
-    background-color: #0779e4
+  background-color: #0779e4;
 }
 
 .danger {
-    background-color: #fff;
-    color: #e20404;
-    border: 1px solid #ddd
+  background-color: #fff;
+  color: #e20404;
+  border: 1px solid #ddd;
 }
 
 .danger:hover {
-    background-color: #e20404;
-    color: #fff
+  background-color: #e20404;
+  color: #fff;
 }
 
 /****************************/
 /********** Main Profile **********/
 /****************************/
-.profile-main{
+.profile-main {
   padding-left: 20px;
   padding-top: 60px;
 }
 
 /****************************/
+/********** FAQ **********/
+/****************************/
+.FAQ {
+  padding-left: 20px;
+}
+
+/****************************/
 /********** MISC **********/
 /****************************/
+
 /* MISC: have to figure out where these are located in*/
 .card {
   display: inline-block;
@@ -575,17 +582,25 @@ css animation to use */
 }
 
 .animate-out {
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
   opacity: 0;
 }
 
 @-webkit-keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
