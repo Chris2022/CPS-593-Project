@@ -549,6 +549,17 @@ select:focus {
 .FAQ {
   padding-left: 20px;
 }
+.FAQ-question{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  width: 25%;
+  box-shadow: 2px 2px 2px 2px rgb(54, 54, 54);
+}
 
 /****************************/
 /********** MISC **********/
@@ -577,8 +588,8 @@ between tabs but could not figure that out
 so created separate pages and so found some JS 
 css animation to use */
 .animate-in {
-  -webkit-animation: fadeIn 30s ease-in;
-  animation: fadeIn 39s ease-in;
+  -webkit-animation: fadeIn 45s ease-in;
+  animation: fadeIn 45s ease-in;
 }
 
 .animate-out {
