@@ -634,6 +634,16 @@ select:focus {
   flex-wrap: wrap;
   flex-direction: row;
 }
+.FAQ-TOP{
+  text-align: center;
+}
+.FAQ-TOP h1{
+  font-size:30px;
+  font-weight:bold;
+}
+.FAQ-TOP p{
+  font-size:20px;
+}
 .FAQ-question {
   margin: 5px;
   border-radius: 10px;
@@ -678,6 +688,24 @@ select:focus {
 
 button a {
   color: white;
+}
+/* BUTTON FOR GROUPS */
+.groups{
+  padding-top: 40px;
+  padding-right: 10px;
+  text-align: right;
+}
+.button{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: steelblue;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgb(108, 106, 106);
+}
+.button:hover{
+  background-color:lightsalmon;
+  color: black;
+  transition: all 0.9s ease;
 }
 
 /* Wanted to created smooth transitions 

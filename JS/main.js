@@ -1,5 +1,4 @@
 // FAQ JS
-
 //currently use this to pull all the question answers from the FAQ.json file
 let question = document.getElementById("FAQ-main");
 FAQ();
