@@ -596,16 +596,16 @@ select:focus {
 
 .button {
   background-color: #fff;
-  color: #0779e4;
+  color: var(--main-color);
 }
 
 .button:hover {
-  background-color: #0779e4;
+  background-color: var(--main-color);
   color: #fff;
 }
 
 .btn-primary {
-  background-color: #0779e4;
+  background-color: var(--main-color);
 }
 
 .danger {
@@ -701,7 +701,7 @@ button a {
 .button{
   border-radius: 10px;
   padding: 10px;
-  background-color: steelblue;
+  background-color: var(--main-color);
   color: white;
   box-shadow: 2px 2px 2px 2px rgb(108, 106, 106);
 }
