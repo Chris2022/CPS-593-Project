@@ -20,6 +20,7 @@ function FAQ(e) {
 
 // JS for user LOGIN
 let form = document.getElementById("form");
+let welcome = document.getElementById("welcome");
 //if there is a form then add event listener
 if (form) form.addEventListener("submit", getCredentials);
 //function to get the credentials

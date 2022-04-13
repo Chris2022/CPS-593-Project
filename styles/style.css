@@ -705,7 +705,7 @@ button a {
 .button:hover{
   background-color:lightsalmon;
   color: black;
-  transition: all 0.9s ease;
+  transition: all 0.9s ease-in-out;
 }
 
 /* Wanted to created smooth transitions 
