@@ -13,6 +13,7 @@ body hr {
   margin-bottom: 1.5rem;
   margin-left: 0px;
 }
+
 label {
   margin: 0;
   margin-bottom: 0;
@@ -21,6 +22,7 @@ label {
   color: #777;
   padding-left: 3px;
 }
+
 h4 {
   letter-spacing: -1px;
   font-weight: 400;
@@ -32,9 +34,11 @@ h4 {
 .navbar {
   height: 100px;
 }
+
 .navbar .navbar-brand #TITLE-ONE {
   text-align: center;
 }
+
 /****************************/
 /********** ABOUT **********/
 /****************************/
@@ -42,20 +46,24 @@ h4 {
 .about-content .ABOUT1 h1 {
   text-align: center;
 }
+
 .ABOUT1 {
   padding-top: 50px;
   width: 100%;
   height: 150px;
   background-color: whitesmoke;
 }
+
 .ABOUT-P1 {
   font-size: larger;
   padding-top: 20px;
   text-align: center;
 }
+
 .ABOUT-P2 {
   font-size: larger;
 }
+
 .ABOUT-P2 p {
   font-weight: 700;
   font-size: x-large;
@@ -65,14 +73,17 @@ h4 {
   width: 50%;
   text-align: center;
 }
+
 .ABOUT3 {
   padding-top: 20px;
   background-color: whitesmoke;
   text-align: center;
 }
+
 .ABOUT3 h1 {
   font-size: 30px;
 }
+
 .BACK-IMAGE {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../images/schedule3.jpeg);
@@ -81,6 +92,7 @@ h4 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 /****************************/
 /********** HOME **********/
 /****************************/
@@ -92,16 +104,19 @@ h4 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .content {
   padding-top: 30px;
   margin: 30px 30px;
   text-align: center;
 }
+
 #time {
   animation-iteration-count: infinite;
   animation-duration: 10s;
   text-decoration: underline;
 }
+
 .home-content .background-image h1 {
   padding-top: 150px;
   text-align: center;
@@ -109,16 +124,20 @@ h4 {
   font-weight: 900;
   color: rgb(255, 255, 255);
 }
+
 .outer figure img {
   width: 100%;
 }
+
 .outer h1 {
   padding-top: 100px;
 }
+
 .outer p {
   padding-top: 10px;
   font-size: x-large;
 }
+
 .outer {
   background-color: whitesmoke;
   padding-top: 50px;
@@ -128,11 +147,13 @@ h4 {
   text-align: center;
   justify-content: center;
 }
+
 .content {
   padding-top: 30px;
   margin: 30px 30px;
   text-align: center;
 }
+
 /****************************/
 /********** FOOTER **********/
 /****************************/
@@ -140,15 +161,18 @@ h4 {
   height: 10px;
   background-color: lightgray;
 }
+
 .footer div {
   margin: auto;
   padding: 0;
 }
+
 .footer {
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
+
 /****************************/
 /********** LOGIN **********/
 /****************************/
@@ -157,6 +181,7 @@ h4 {
   width: 70%;
   padding-bottom: 100px;
 }
+
 /****************************/
 /********** SIGN UP **********/
 /****************************/
@@ -164,21 +189,26 @@ h4 {
   width: 60%;
   padding-bottom: 20px;
 }
+
 /****************************/
 /********** CONTACT **********/
 /****************************/
 .main-contact {
   padding-bottom: 20px;
 }
+
 .main-contact .container-content {
   padding-top: 0px;
 }
+
 .main-contact .columns .column .card {
   width: 100%;
 }
+
 .main-contact .columns .column .card .card-content .content .field label {
   text-align: left;
 }
+
 /****************************/
 /********** DASHBOARD NAV**********/
 /****************************/
@@ -187,12 +217,14 @@ h4 {
   --color-dark: #1d2231;
   --text-grey: #8390a2;
 }
+
 * {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
 }
+
 .sidebar {
   width: 345px;
   position: fixed;
@@ -203,30 +235,36 @@ h4 {
   z-index: 100;
   transition: width 300ms;
 }
+
 .sidebar .sidebar-brand h1 {
   color: white;
   padding-bottom: 20px;
 }
+
 .sidebar .sidebar-brand h1 img {
   width: 50px;
   height: 50px;
   border-radius: 20px;
   object-fit: cover;
 }
+
 .sidebar-brand {
   height: 90px;
   padding: 1rem 0rem 1rem 2rem;
   color: #fff;
 }
+
 .sidebar-brand span {
   display: inline-block;
   padding-right: 1rem;
 }
+
 .sidebar-menu li {
   width: 313.5px;
   margin-bottom: 1.3rem;
   padding-left: 1rem;
 }
+
 .sidebar-menu a {
   text-decoration: none;
   padding-left: 1rem;
@@ -234,6 +272,7 @@ h4 {
   color: #fff;
   font-size: 1.1rem;
 }
+
 .sidebar-menu a:hover {
   transition: all 0.9s ease-in-out;
   padding-left: 1rem;
@@ -244,6 +283,7 @@ h4 {
   font-size: 1.1rem;
   border-radius: 30px 0px 0px 30px;
 }
+
 .sidebar-menu a.active {
   background: #fff;
   padding-top: 1rem;
@@ -251,14 +291,17 @@ h4 {
   color: steelblue;
   border-radius: 30px 0px 0px 30px;
 }
+
 .sidebar-menu a span:first-child {
   font-size: 1.5rem;
   padding-right: 1rem;
 }
+
 .main-content {
   transition: margin-left 300ms;
   margin-left: 345px;
 }
+
 .head {
   background-color: #fff;
   position: fixed;
@@ -273,35 +316,44 @@ h4 {
   color: #222;
   transition: left 300ms;
 }
-#nav-toggle:checked + .sidebar {
+
+#nav-toggle:checked+.sidebar {
   width: 90px;
 }
-#nav-toggle:checked + .sidebar .sidebar-brand,
-#nav-toggle:checked + .sidebar li {
+
+#nav-toggle:checked+.sidebar .sidebar-brand,
+#nav-toggle:checked+.sidebar li {
   padding-left: 0.8rem;
 }
-#nav-toggle:checked + .sidebar li a {
+
+#nav-toggle:checked+.sidebar li a {
   padding-left: 0.5rem;
 }
-#nav-toggle:checked + .sidebar li a span {
+
+#nav-toggle:checked+.sidebar li a span {
   padding-right: 1rem;
 }
-#nav-toggle:checked + .sidebar .sidebar-brand h1 span:last-child,
-#nav-toggle:checked + .sidebar li a span:last-child {
+
+#nav-toggle:checked+.sidebar .sidebar-brand h1 span:last-child,
+#nav-toggle:checked+.sidebar li a span:last-child {
   display: none;
 }
-#nav-toggle:checked ~ .main-content {
+
+#nav-toggle:checked~.main-content {
   margin-left: 90px;
 }
-#nav-toggle:checked ~ .main-content .head {
+
+#nav-toggle:checked~.main-content .head {
   width: calc(100% - 90px);
   left: 90px;
 }
-#nav-toggle:checked + .sidebar .sidebar-menu li {
+
+#nav-toggle:checked+.sidebar .sidebar-menu li {
   transition: width 310ms;
   width: 58.5px;
 }
-#nav-toggle + .sidebar .sidebar-menu li {
+
+#nav-toggle+.sidebar .sidebar-menu li {
   transition: width 300ms;
 }
 
@@ -309,6 +361,7 @@ h4 {
   font-size: 1.7rem;
   padding-right: 1rem;
 }
+
 .search-wrapper {
   border: 1px solid #ccc;
   border-radius: 30px;
@@ -317,24 +370,29 @@ h4 {
   align-items: center;
   overflow: hidden;
 }
+
 .search-wrapper span {
   display: inline-block;
   padding: 0rem 1rem;
   font-size: 1.5rem;
 }
+
 .sidebar-menu {
   margin-top: 1rem;
 }
+
 .search-wrapper input {
   height: 100%;
   padding: 0.5rem;
   border: none;
   outline: none;
 }
+
 .user-wrapper {
   display: flex;
   align-items: center;
 }
+
 .user-wrapper img {
   border-radius: 50%;
   margin-right: 1rem;
@@ -345,18 +403,21 @@ h4 {
   color: lightgray;
   margin-top: -3px !important;
 }
+
 .dash-main {
   margin-top: 85px;
   padding: 2rem 1.5rem;
   background-color: #f1f5f9;
   min-height: calc(100vh- 90px);
 }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   margin-top: 1rem;
 }
+
 .card-single {
   display: flex;
   justify-content: space-between;
@@ -364,21 +425,26 @@ h4 {
   padding: 2rem;
   border-radius: 2px;
 }
+
 .card-single div:last-child span {
   font-size: 3rem;
   color: var(--main-color);
 }
+
 .card-single:last-child div:first-child span {
   color: var(--text-grey);
 }
+
 .card-single:last-child {
   background: var(--main-color);
 }
+
 .card-single:last-child h1,
 .card-single:last-child div:last-child span,
 .card-single:last-child div:first-child span {
   color: #fff;
 }
+
 /* Recent Projects, will use JS*/
 .recent-grid {
   margin-top: 3.5rem;
@@ -386,20 +452,24 @@ h4 {
   grid-gap: 2rem;
   grid-template-columns: 70% auto;
 }
+
 .card {
   background: #fff;
   border-radius: 5px;
 }
+
 .card-header,
 .card-body {
   padding: 1rem;
 }
+
 .card-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
 }
+
 .card-header button {
   background: var(--main-color);
   border-radius: 10px;
@@ -408,21 +478,26 @@ h4 {
   padding: 0.5rem 1rem;
   border: 1px solid var(--main-color);
 }
+
 table {
   border-collapse: collapse;
 }
+
 thead tr {
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
 }
+
 thead td {
   font-weight: 700;
 }
+
 td {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
   color: #222;
 }
+
 td .status {
   display: inline-block;
   height: 20px;
@@ -430,23 +505,29 @@ td .status {
   border-radius: 50%;
   margin-right: 1rem;
 }
+
 tr td:last-child {
   display: flex;
   align-items: center;
 }
+
 .status.purple {
   background-color: purple;
 }
+
 .status.pink {
   background-color: pink;
 }
+
 .status.orange {
   background-color: orange;
 }
+
 .table-responsive {
   width: 100%;
   overflow-x: auto;
 }
+
 /****************************/
 /********** Main Projects **********/
 /****************************/
@@ -547,20 +628,34 @@ select:focus {
 /********** FAQ **********/
 /****************************/
 .FAQ {
-  padding-left: 20px;
-}
-.FAQ-question{
+  padding:60px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 10px;
+  flex-direction: row;
+}
+.FAQ-question {
+  margin: 5px;
   border-radius: 10px;
   border: 1px solid gray;
   width: 25%;
+  padding: 10px;
   box-shadow: 2px 2px 2px 2px rgb(54, 54, 54);
 }
-
+.FAQ-question:hover{
+  box-shadow: 10px 8px 8px 10px rgb(54, 54, 54);
+  transition: all 0.9s ease;
+}
+.FAQ-question-title{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+.FAQ-question-answer{
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
 /****************************/
 /********** MISC **********/
 /****************************/
@@ -576,9 +671,11 @@ select:focus {
   padding-top: 10px;
   position: relative;
 }
+
 .container {
   text-align: center;
 }
+
 button a {
   color: white;
 }
@@ -602,6 +699,7 @@ css animation to use */
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -611,6 +709,7 @@ css animation to use */
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

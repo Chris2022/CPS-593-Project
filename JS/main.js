@@ -1,16 +1,19 @@
 // FAQ JS
+
+//currently use this to pull all the question answers from the FAQ.json file
 let question = document.getElementById("FAQ-main");
-let section = document.getElementById("quest");
 FAQ();
 function FAQ(e) {
     fetch("../JSON/FAQ.json")
         .then((res) => res.json())
         .then((data) => {
-            for (var i = 0; i < data.length; i++) {
-                var div = document.createElement("div");
-                div.innerHTML = data[i].question + " " + `<br>` + data[i].Answer;
-                div.className = "FAQ-question";
-                question.appendChild(div);
+            for (let i = 0; i < data.length; i++) {
+                let FAQ = `
+                        <div class="FAQ-question">
+                            <h2 class="FAQ-question-title">${data[i].question}</h2><hr>
+                            <p class="FAQ-question-answer">${data[i].Answer}</p>
+                        </div>`;
+                question.innerHTML += FAQ;
             }
         })
         .catch((err) => console.log(err));
