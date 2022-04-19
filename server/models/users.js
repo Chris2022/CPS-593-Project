@@ -1,8 +1,8 @@
 const users = [
     {
       userId: 12345,
-      userName: "cathy123",
-      password: "icecream"
+      userName: "@Chris710",
+      password: "hamburger45"
     },
     {
       userId: 55555,
@@ -11,8 +11,8 @@ const users = [
     },
     {
       userId: 34212,
-      userName: "coolcathy34",
-      password: "badpassword"
+      userName: "kaithoff",
+      password: "candy456"
     }
   ]
   
