@@ -6,8 +6,8 @@ const userRoutes = require('./server/routes/users');
 
 app.use(express.json()); //To parse JSON bodies (Applicable for Express 4.16+)
 
-app.use(express.static(__dirname + "/public"));
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/index.html')));
+app.use(express.static(__dirname + "/docs"));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/docs/index.html')));
 
 //CORS middleware
 app.use(function(req, res, next) {
