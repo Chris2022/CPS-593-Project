@@ -20,13 +20,13 @@ let getUsers = async () => {
 
 async function getUser(user) {
   let sql;
-  if(user.userId) {
+  if(user.username) {
     sql = `SELECT * FROM users
-      WHERE user_id = ${user.user_id}
+      WHERE user_id = ${user.username}
     `;
   } else {
     sql = `SELECT * FROM users
-      WHERE username = "${user.username}"
+      WHERE username = "${user.user_id}"
     `;
   }
 
@@ -36,17 +36,17 @@ async function getUser(user) {
 async function login(username, password) {
   const user = await userExists(username);
   if(!user[0]) throw Error('User not found')
-  if(user[0].user_password !== password) throw Error("Password is incorrect");
+  if(user[0].password !== password) throw Error("Password is incorrect");
 
   return user[0];
 }
 
 async function register(user) {
-  const u = userExists(user.username);
+  console.log(user);
+  const u = await userExists(user.username);
   if(u.length>0) throw Error("Username already exists");
-
-  const sql = `INSERT INTO users (username, user_password)
-    VALUES ("${user.username}", "${user.password}")
+  const sql = `INSERT INTO users (username, firstname, lastname, password, birthdate)
+    VALUES ("${user.username}", "${user.firstname}", "${user.lastname}", "${user.password}", "${user.birthdate}")
   `;
 
   const insert = await con.query(sql);
@@ -71,8 +71,8 @@ async function userExists(username) {
 
 async function editUser(user) {
   const sql = `UPDATE users SET
-    username = "${user.userName}"
-    WHERE user_id = ${user.userId}
+    username = "${user.username}"
+    WHERE user_id = ${user.user_id}
   `;
   const update = await con.query(sql);
   const newUser = await getUser(user);
@@ -100,21 +100,6 @@ async function orderWhere(table, selection, column, condition) {
 async function orderUsernames() {
   const sql = `SELECT * FROM users
     ORDER BY username DESC
-  `;
-  return await con.query(sql);
-}
-
-//min and max
-async function minHeight() {
-  const sql = `SELECT MIN(user_height) 
-    FROM users
-  `;
-  return await con.query(sql);
-}
-
-async function maxHeight() {
-  const sql = `SELECT MAX(user_height) 
-    FROM users
   `;
   return await con.query(sql);
 }

@@ -32,9 +32,12 @@ function register(e) {
   e.preventDefault();
 
   const name = document.getElementById("username").value;
+  const first = document.getElementById("fName").value;
+  const last = document.getElementById("lName").value;
   const pswd = document.getElementById("pass").value;
+  const birth = document.getElementById("birthday").value;
 
-  fetchData('/users/register', {username: name, password: pswd}, "POST")
+  fetchData('/users/register', {username: name,firstname: first, lastname: last ,password: pswd, birthdate: birth}, "POST")
   .then((data) => {
     if(!data.message) {
       setCurrentUser(data);
