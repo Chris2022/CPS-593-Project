@@ -1,6 +1,5 @@
 import 
-{ fetchData, getCurrentUser, setCurrentUser, removeCurrentUser } 
-from './main.js'
+{ fetchData, getCurrentUser, setCurrentUser, removeCurrentUser } from './main.js'
 
 const loginForm = document.getElementById("form");
 if(loginForm) loginForm.addEventListener('submit', login);
@@ -51,3 +50,7 @@ function register(e) {
     console.log(`Error! ${errText}`)
   });
 }
+
+let user = getCurrentUser();
+let welcome = document.getElementById("welcome");
+welcome.innerHTML = `${user.firstname} ${user.lastname}`;

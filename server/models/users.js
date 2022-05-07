@@ -20,17 +20,18 @@ let getUsers = async () => {
 
 async function getUser(user) {
   let sql;
-  if(user.username) {
+  if(user.user_id) {
     sql = `SELECT * FROM users
-      WHERE user_id = ${user.username}
+      WHERE user_id = ${user.user_id}
     `;
   } else {
     sql = `SELECT * FROM users
-      WHERE username = "${user.user_id}"
+      WHERE username = "${user.username}"
     `;
   }
-
-  return await con.query(sql);
+  let u = await con.query(sql);
+  console.log("In get user: " + u);
+  return u;
 }
 
 async function login(username, password) {
