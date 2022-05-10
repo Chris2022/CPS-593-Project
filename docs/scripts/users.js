@@ -53,4 +53,4 @@ function register(e) {
 
 let user = getCurrentUser();
 let welcome = document.getElementById("welcome");
-welcome.innerHTML = `${user.firstname} ${user.lastname}`;
+if(welcome) welcome.innerHTML = `${user.firstname} ${user.lastname}`;
