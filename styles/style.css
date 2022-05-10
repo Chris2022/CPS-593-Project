@@ -542,6 +542,9 @@ tr td:last-child {
   padding-left: 20px;
   padding-top: 60px;
 }
+#createGroup{
+  margin-top: 3rem;
+}
 
 .wrapper {
   padding: 30px 50px;
@@ -714,7 +717,6 @@ button a {
   color: black;
   transition: all 0.9s ease-in-out;
 }
-
 /* Wanted to created smooth transitions 
 between tabs but could not figure that out
 so created separate pages and so found some JS 

@@ -12,6 +12,15 @@ router
             res.status(401).send({message: err.message});
         }
     })
+    .post('/', async (req, res) => {
+        try {
+            const add = await Group.addGroup(req.body);
+            res.send(add);
+        } catch(err) {
+            res.status(401).send({message: err.message});
+        }
+
+    })
 
 
     module.exports = router;

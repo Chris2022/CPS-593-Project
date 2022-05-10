@@ -6,6 +6,7 @@ const userRoutes = require('./server/routes/users');
 const groupsRoutes = require('./server/routes/groups');
 const tasksRoutes = require('./server/routes/task');
 const scheduleRoutes = require('./server/routes/schedule');
+const contactRoutes = require('./server/routes/contact');
 
 app.use(express.json()); //To parse JSON bodies (Applicable for Express 4.16+)
 
@@ -24,6 +25,7 @@ app.use("/users", userRoutes);
 app.use("/groups", groupsRoutes);
 app.use("/task", tasksRoutes);
 app.use("/schedule", scheduleRoutes);
+app.use("/contact", contactRoutes);
 
 
 const PORT = process.env.PORT || 3000;
