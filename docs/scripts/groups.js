@@ -15,3 +15,7 @@ function createGroup(e) {
             window.location.href = 'dashboard.html';
         }});
 }
+
+function addGroup(){
+    
+}

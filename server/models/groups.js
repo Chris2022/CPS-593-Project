@@ -13,18 +13,18 @@ async function createGroup() {
 createGroup();
 
 
-async function addGroup(group) {
+async function addGroup(group,user) {
   const sql = `INSERT INTO task_group (group_name, user_id)
-    VALUES ("${group.group_name}", ${group.user_id})
+    VALUES ("${group.group_name}", ${user.user_id})
   `;
   await con.query(sql);
 
 }
 
-async function getGroupInfo(group) {
+async function getGroupInfo(user) {
   let sql;
   if(user.user_id){
-    sql = `SELECT group_id, group_name FROM task_group WHERE user_id = ${user.user_id}`;
+    sql = `SELECT group_name FROM task_group WHERE user_id = ${user.user_id}`;
   }
   else{
     alert("Please login first to view groups");

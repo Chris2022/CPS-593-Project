@@ -4,15 +4,15 @@ const router = express.Router();
 
 
 router 
-    .get('/', async (req, res) => {
+    .get('/groups', async (req, res) => {
         try {
-            const groups = await Group.getGroups();
+            const groups = await Group.getGroupInfo(req.body);
             res.send(groups);
         } catch(err) {
             res.status(401).send({message: err.message});
         }
     })
-    .post('/', async (req, res) => {
+    .post('/groups', async (req, res) => {
         try {
             const add = await Group.addGroup(req.body);
             res.send(add);
