@@ -15,4 +15,11 @@ async function createTask() {
 }
 createTask();
 
-module.exports = { createTask };
+async function addTask(task, user) {
+    const sql = `INSERT INTO task (task_name, task_description, group_id, user_id)
+    VALUES ("${task.task_name}", "${task.task_description}", ${task.group_id}, ${user.user_id});
+    `;
+    await con.query(sql);
+}
+
+module.exports = { createTask, addTask };

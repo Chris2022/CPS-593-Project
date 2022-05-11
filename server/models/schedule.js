@@ -13,5 +13,10 @@ async function createSchedule () {
 }
 createSchedule();
 
-
+async function addSchedule(schedule, task) {
+    const sql = `INSERT INTO schedules (schedule_date, schedule_time, task_id)
+    VALUES ("${schedule.schedule_date}", "${schedule.schedule_time}", ${task.task_id});
+    `;
+    await con.query(sql);
+}
 module.exports = { createSchedule };
