@@ -17,6 +17,7 @@ async function addGroup(group,user) {
   const sql = `INSERT INTO task_group (group_name, user_id)
     VALUES ("${group.group_name}", ${user.user_id})
   `;
+  console.log("Does this work?")
   await con.query(sql);
 
 }
