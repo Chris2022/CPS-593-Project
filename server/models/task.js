@@ -22,4 +22,26 @@ async function addTask(task, user) {
     await con.query(sql);
 }
 
-module.exports = { createTask, addTask };
+async function getTaskInfo(user) {
+    let sql;
+    if (user.user_id) {
+        sql = `SELECT task_name, task_description FROM task WHERE user_id = ${user.user_id}`;
+    }
+    else {
+        alert("Please login first to view tasks");
+    }
+    await con.query(sql);
+}
+
+async function editTask(task, user) {
+    let sql;
+    if (user.user_id) {
+        sql = `UPDATE task SET task_name = "${task.task_name}", task_description = "${task.task_description}" WHERE user_id = ${user.user_id}`;
+    }
+    else {
+        alert("Please login first to view tasks");
+    }
+    await con.query(sql);
+}
+
+module.exports = { createTask, addTask, getTaskInfo, editTask };

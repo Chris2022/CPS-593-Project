@@ -19,4 +19,4 @@ async function addSchedule(schedule, task) {
     `;
     await con.query(sql);
 }
-module.exports = { createSchedule };
+module.exports = { createSchedule, addSchedule };

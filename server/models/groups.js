@@ -35,4 +35,16 @@ async function getGroupInfo(user) {
   }
   await con.query(sql);
 }
-module.exports = { createGroup, addGroup, getGroupInfo };
+async function editGroup(groups,user ){
+  let sql;
+  if(user.user_id){
+    sql = `UPDATE task_group SET group_name = "${group.group_name}" WHERE user_id = ${user.user_id}`;
+  }
+  else{
+    alert("Please login first to view groups");
+  }
+  await con.query(sql);
+}
+
+
+module.exports = { createGroup, addGroup, getGroupInfo, editGroup };

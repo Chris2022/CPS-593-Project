@@ -11,6 +11,13 @@ router
             res.status(401).send({message: err.message});
         }
     })
-
+    .post('/', async (req, res) => {
+        try {
+            const task = await Task.addTask(req.body);
+            res.send(task);
+        } catch(err) {
+            res.status(401).send({message: err.message});
+        }
+    })
 
     module.exports = router;
