@@ -55,7 +55,7 @@ async function register(user) {
   return newUser[0];
 }
 
-async function deleteUser(userId) {
+async function deleteUser(user_id) {
   const sql = `DELETE FROM users 
     WHERE user_id = ${user_id}
   `;

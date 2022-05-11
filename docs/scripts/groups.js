@@ -8,14 +8,20 @@ function createGroup(e) {
 
     const groupName = document.getElementById('groupName').value;
     const userId = getCurrentUser().user_id;
+    console.log(groupName);
 
-    fetchData('/groups/create', {groupName, userId}, 'POST')
+    fetchData('/groups', {group_name:groupName, user_id:userId}, 'POST')
     .then((data) => {
         if (!data.message) {
-            window.location.href = 'dashboard.html';
-        }});
+            console.log(data); 
+        }
+        else{
+            console.log("HELLLLLLOOOOOOO");
+        }
+    });
+
 }
 
-function addGroup(){
+// function addGroup(){
     
-}
+// }

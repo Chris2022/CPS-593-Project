@@ -14,6 +14,8 @@ createGroup();
 
 
 async function addGroup(group,user) {
+  console.log("HELLO")
+  console.log(group,user);
   const sql = `INSERT INTO task_group (group_name, user_id)
     VALUES ("${group.group_name}", ${user.user_id})
   `;

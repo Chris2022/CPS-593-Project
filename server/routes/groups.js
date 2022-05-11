@@ -1,5 +1,6 @@
 const express = require('express');
 const Group = require('../models/groups');
+const User = require('../models/users');
 const router = express.Router();
 
 
@@ -14,7 +15,9 @@ router
     })
     .post('/groups', async (req, res) => {
         try {
-            const add = await Group.addGroup(req.body);
+            const user = await User.getCurrentUser();
+            const add = await Group.addGroup(req.body, user);
+            console.log(add);
             res.send(add);
         } catch(err) {
             res.status(401).send({message: err.message});
