@@ -25,6 +25,7 @@ async function addGroup(group,user) {
 }
 
 async function getGroupInfo(user) {
+  console.log("HELLO")
   let sql;
   if(user.user_id){
     sql = `SELECT group_name FROM task_group WHERE user_id = ${user.user_id}`;

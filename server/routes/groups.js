@@ -8,6 +8,7 @@ router
     .get('/groups', async (req, res) => {
         try {
             const groups = await Group.getGroupInfo(req.body);
+            console.log(groups + "HEREEEEEEEEEEE");
             res.send(groups);
         } catch(err) {
             res.status(401).send({message: err.message});
@@ -17,7 +18,7 @@ router
         try {
             const user = await User.getCurrentUser();
             const add = await Group.addGroup(req.body, user);
-            console.log(add);
+            console.log(add+ " EHEHEEHEHEHEHE H");
             res.send(add);
         } catch(err) {
             res.status(401).send({message: err.message});
