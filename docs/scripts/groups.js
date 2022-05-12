@@ -2,28 +2,37 @@ import {fetchData, getCurrentUser} from './main.js';
 
 const create = document.getElementById('create');
 if (create) create.addEventListener('submit', createGroup);
-console.log(create + " JFSDFDFSF ");
-
 function createGroup(e) {
-    console.log("HELLO");
     e.preventDefault();
-
     const groupName = document.getElementById('groupName').value;
     const userId = getCurrentUser().user_id;
-    console.log(userId);
-
-    fetchData('/groups', {group_name:groupName, user_id:userId}, 'POST')
+    fetchData('/groups/create', {group_name:groupName, user_id:userId}, 'POST')
     .then((data) => {
+        console.log("DO I GET HERE?");
         if (!data.message) {
-            console.log(data + 'HEREEE '); 
+            console.log("Was the group Created?");
+            window.alert("Group Created!");
         }
         else{
-            console.log("HELLLLLLOOOOOOO");
+            console.log("Group was not created");
+            window.alert("Group Name already exists, please choose another name");
         }
     });
 
 }
 
-// function addGroup(){
-    
+// function getGroupInfo(e) {
+//     e.preventDefault();
+//     const userId = getCurrentUser().user_id;
+//     const groupName = document.getElementById('groupName').value;
+//     fetchData('/groups/info', {group_name:groupName, user_id:userId}, 'POST')
+//     .then((data) => {
+//         if (!data.message) {
+//             const name = document.getElementById('group-name');
+//             if(name){
+//                 name.innerHTML = data.group_name;
+//             }
+//         }
+//     });
 // }
+// if (create) create.addEventListener('submit', getGroupInfo);

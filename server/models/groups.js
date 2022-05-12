@@ -14,28 +14,27 @@ createGroup();
 
 
 async function addGroup(group,user) {
-  console.log("HELLO")
-  console.log(group,user);
-  const sql = `INSERT INTO task_group (group_name, user_id)
-    VALUES ("${group.group_name}", ${user.user_id})
-  `;
-  console.log("Does this work?")
-  await con.query(sql);
-
+  let count = `SELECT COUNT(1) FROM task_group WHERE group_name = "${group}"`;
+  let count1 = await con.query(count);
+  if(count1[0]['COUNT(1)']==0){
+    const sql = `INSERT INTO task_group (group_name, user_id)
+    VALUES ("${group}", ${user})
+    `;
+    await con.query(sql);
+  }
 }
 
 async function getGroupInfo(user) {
-  console.log("HELLO")
   let sql;
-  if(user.user_id){
-    sql = `SELECT group_name FROM task_group WHERE user_id = ${user.user_id}`;
+  if(user){
+    sql = `SELECT group_name FROM task_group WHERE user_id = ${user}`;
   }
   else{
     alert("Please login first to view groups");
   }
   await con.query(sql);
 }
-async function editGroup(groups,user ){
+async function editGroup(group,user ){
   let sql;
   if(user.user_id){
     sql = `UPDATE task_group SET group_name = "${group.group_name}" WHERE user_id = ${user.user_id}`;

@@ -5,20 +5,18 @@ const router = express.Router();
 
 
 router 
-    .get('/groups', async (req, res) => {
+    .post('/info', async (req, res) => {
         try {
-            const groups = await Group.getGroupInfo(req.body);
-            console.log(groups + "HEREEEEEEEEEEE");
+            const groups = await Group.getGroupInfo(req.body.group_name);
             res.send(groups);
         } catch(err) {
             res.status(401).send({message: err.message});
         }
     })
-    .post('/groups', async (req, res) => {
+    .post('/create', async (req, res) => {
         try {
-            const user = await User.getCurrentUser();
-            const add = await Group.addGroup(req.body, user);
-            console.log(add+ " EHEHEEHEHEHEHE H");
+            const user = req.body.user_id;
+            const add = await Group.addGroup(req.body.group_name, user);
             res.send(add);
         } catch(err) {
             res.status(401).send({message: err.message});
