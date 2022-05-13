@@ -14,6 +14,7 @@ export async function fetchData(url = '', data = {}, methodType) {
     body: JSON.stringify(data) // body data type must match "Content-Type" header
   });
   if(response.ok) {
+    console.log("Response is ok");
     return await response.json(); // parses JSON response into native JavaScript objects
   } else {
     throw await response.json();
