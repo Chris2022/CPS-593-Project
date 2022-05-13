@@ -51,7 +51,7 @@ function register(e) {
   });
 }
 
-let user = getCurrentUser();
+let user = getCurrentUser().user_id;
 let welcome = document.getElementById("welcome");
 if(welcome) welcome.innerHTML = `${user.firstname} ${user.lastname}`;
 

@@ -21,8 +21,6 @@ function createGroup(e) {
     });
 }
 
-let hide = document.getElementById("myGroup");
-
 function getGroupInfo(e) {
     e.preventDefault();
     const userId = getCurrentUser().user_id;
@@ -34,16 +32,17 @@ function getGroupInfo(e) {
     ).then((data) => {
         if (!data.message) {
             console.log(data);
-
             const ul = document.getElementById("myGroup");
             if (ul) {
                 for (let index = 0; index < data.length; index++) {
                    ul.innerHTML += ` <li>
+                   <div class="card" id="GROUPS" >
                    <div class="card-body">
                    <h2 class="card-title">${data[index].group_name}</h2>
                    <a href="#" class="card-link">Edit</a>
                    <a href="#" class="card-link">Delete</a>
-                    </div></li>`;
+                    </div></div>
+                    </li>`;
                 }
             }
         }
