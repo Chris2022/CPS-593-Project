@@ -14,7 +14,7 @@ createGroup();
 
 
 async function addGroup(group,user) {
-  let count = `SELECT COUNT(1) FROM task_group WHERE group_name = "${group}"`;
+  let count = `SELECT COUNT(1) FROM task_group WHERE group_name = "${group}" and user_id = ${user}`;
   let count1 = await con.query(count);
   if(count1[0]['COUNT(1)']==0){
     const sql = `INSERT INTO task_group (group_name, user_id)
@@ -40,7 +40,6 @@ async function getGroupInfo(user) {
 }
 
 async function getAllGroups(user){
-  console.log(user + " in get all groups")
   let sql;
   if(user){
     sql = `SELECT * FROM task_group WHERE user_id = ${user}`;

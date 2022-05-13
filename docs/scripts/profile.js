@@ -9,8 +9,9 @@ const deactivate = document.getElementById("deactivate");
 if (deactivate) deactivate.addEventListener("submit", deleteAccount);
 
 function deleteAccount() {
+  const user_identification = getCurrentUser().user_id;
   if (confirm("Are you sure you want to delete your account???")) {
-    fetchData("/users/delete", { userId: user.user_id }, "DELETE")
+    fetchData("/users/delete", { userId: user_identification }, "DELETE")
       .then((data) => {
         if (!data.message) {
           removeCurrentUser();

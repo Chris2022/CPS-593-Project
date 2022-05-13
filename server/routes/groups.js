@@ -33,6 +33,7 @@ router
     })
     .delete('/delete', async (req, res) => {
         try {
+            console.log("DELETE GROUP")
             const user = req.body.user_id;
             const deleteGroup = await Group.deleteGroup(req.body.group_name, user);
             res.send(deleteGroup);

@@ -15,8 +15,11 @@ function createGroup(e) {
         if (!data.message) {
             window.alert("Group Created!");
         } 
-        else {
+        else if (data.message) {
             window.alert("Group Name already exists, please choose another name!");
+        }
+        else{
+            window.alert("Error!");
         }
     });
 }
@@ -30,8 +33,8 @@ function getGroupInfo(e) {
         { group_name: groupName, user_id: userId },
         "POST"
     ).then((data) => {
+        console.log("hi")
         if (!data.message) {
-            console.log(data);
             const ul = document.getElementById("myGroup");
             if (ul) {
                 for (let index = 0; index < data.length; index++) {
@@ -40,25 +43,33 @@ function getGroupInfo(e) {
                    <div class="card-body">
                    <h2 class="card-title">${data[index].group_name}</h2>
                    <a href="#" class="card-link">Edit</a>
-                   <a href="#" class="card-link" id="delete">Delete</a>
+                   <a href="#" class="card-link" id="${data[index].group_name}">Delete</a>
                     </div></div>
                     </li>`;
+                    let btn = document.getElementById(`${data[index].group_name}`);
+                    if(btn) btn.addEventListener("click", deleteGroup);
                 }
             }
         }
     });
 }
-const erase_from_existance = document.getElementById("delete");
-if(erase_from_existance) deleteGroup.addEventListener("click", deleteGroup);
+// const erase_from_existance = document.getElementById("delete");
+// if(erase_from_existance) erase_from_existance.addEventListener("click", deleteGroup);
+const myGroup = document.getElementById("myGroup");
+
 function deleteGroup(e) {
+    console.log(e.target.parentElement.parentElement)
+    console.log(e.target.id)
+    let group_name_id = e.target.id;
+    console.log(group_name_id);
+    let div = e.target.parentElement.parentElement;
+    myGroup.removeChild(div);
     e.preventDefault();
-    if(window.confirm("Are you sure you want to delete this group?")) {
-        fetchData('/groups/delete', {group_name: groupName, user_id: userId}, "DELETE")
-        .then((data) => {
-            if(!data.message) {
-                window.alert("Group Deleted!");
-            }
-        })
-    }
+    fetchData('/groups/delete', {group_name: group_name_id, user_id: userId}, "DELETE")
+    .then((data) => {
+        if(!data.message) {
+            window.alert("Group Deleted!");
+        }
+    })
 } 
 
