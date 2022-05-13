@@ -58,9 +58,10 @@ async function editGroup(group,user ){
   return await con.query(sql);
 }
 async function deleteGroup(group,user){
+  console.log("AM IHERERRRERE")
   let sql;
-  if(user.user_id){
-    sql = `DELETE FROM task_group WHERE group_name = "${group.group_name}" AND user_id = ${user.user_id}`;
+  if(user){
+    sql = `DELETE FROM task_group WHERE group_name = "${group}" AND user_id = ${user}`;
   }
   else throw Error('Please login first to view groups');
   return await con.query(sql);

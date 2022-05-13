@@ -31,6 +31,16 @@ router
         }
 
     })
+    .delete('/delete', async (req, res) => {
+        try {
+            const user = req.body.user_id;
+            const deleteGroup = await Group.deleteGroup(req.body.group_name, user);
+            res.send(deleteGroup);
+        }
+        catch(err) {
+            res.status(401).send({message: err.message});
+        }
+    })
 
 
     module.exports = router;

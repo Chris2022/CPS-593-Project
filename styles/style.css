@@ -556,7 +556,7 @@ tr td:last-child {
 }
 #GROUPS:hover{
   font-size: larger;
-  box-shadow: 5px 5px 5px darkgrey;
+  box-shadow: 10px 10px 10px darkgrey;
   transition: all 0.7s ease-in-out;
 }
 #GROUPS a{

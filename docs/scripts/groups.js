@@ -40,7 +40,7 @@ function getGroupInfo(e) {
                    <div class="card-body">
                    <h2 class="card-title">${data[index].group_name}</h2>
                    <a href="#" class="card-link">Edit</a>
-                   <a href="#" class="card-link">Delete</a>
+                   <a href="#" class="card-link" id="delete">Delete</a>
                     </div></div>
                     </li>`;
                 }
@@ -48,4 +48,17 @@ function getGroupInfo(e) {
         }
     });
 }
+const erase_from_existance = document.getElementById("delete");
+if(erase_from_existance) deleteGroup.addEventListener("click", deleteGroup);
+function deleteGroup(e) {
+    e.preventDefault();
+    if(window.confirm("Are you sure you want to delete this group?")) {
+        fetchData('/groups/delete', {group_name: groupName, user_id: userId}, "DELETE")
+        .then((data) => {
+            if(!data.message) {
+                window.alert("Group Deleted!");
+            }
+        })
+    }
+} 
 
