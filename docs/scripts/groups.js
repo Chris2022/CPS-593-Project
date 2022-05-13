@@ -21,6 +21,8 @@ function createGroup(e) {
     });
 }
 
+let hide = document.getElementById("myGroup");
+
 function getGroupInfo(e) {
     e.preventDefault();
     const userId = getCurrentUser().user_id;
@@ -31,35 +33,20 @@ function getGroupInfo(e) {
         "POST"
     ).then((data) => {
         if (!data.message) {
-            const name = document.getElementById("group-name");
-            if (name) {
-                console.log(data)
+            console.log(data);
+
+            const ul = document.getElementById("myGroup");
+            if (ul) {
                 for (let index = 0; index < data.length; index++) {
-                    name.innerHTML += `<li>${data[index].group_name}</li>`;
+                   ul.innerHTML += ` <li>
+                   <div class="card-body">
+                   <h2 class="card-title">${data[index].group_name}</h2>
+                   <a href="#" class="card-link">Edit</a>
+                   <a href="#" class="card-link">Delete</a>
+                    </div></li>`;
                 }
             }
         }
     });
 }
 
-
-// const myGroup = document.getElementById("myGroup");
-// if (myGroup) myGroup.addEventListener("submit", showAllGroups);
-
-// function showAllGroups(e) {
-//     e.preventDefault();
-//     const userId = getCurrentUser().user_id;
-//     fetchData("/groups/all", { user_id: userId }, "POST").then((data) => {
-//         if (!data.message) {
-//             for (let i = 0; i < data.length; i++) {
-//                 myGroup.innerHTML += `
-//           <div class="card">
-//             <div class="card-body">
-//                 <h2>Group: <span class="group-name">${data[i].group_name} </span</h2>
-//             </div>
-//             </div>
-//           `;
-//             }
-//         }
-//     });
-// }

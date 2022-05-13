@@ -545,9 +545,13 @@ tr td:last-child {
 #createGroup{
   margin-top: 3rem;
 }
-#myGroups{
+.hide {
+  display: none;
+}
+.show{
   padding-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
