@@ -87,7 +87,7 @@ To sucessfully be able run the project, you must install the following:
 - To then run the project, you must do the following:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- open the index.html file with live server if you have it.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Then run the following command in the terminal:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- npm run dev
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* npm run dev
 
 
 
