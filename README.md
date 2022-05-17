@@ -45,8 +45,8 @@ Other than that, the project works, but it is just missing more funcionality tha
 - Node.js
 
 ## Entity Relationship Diagram:
-![Fancy logo](./img/CPS%20593_%20Assignment%204.png#gh-dark-mode-only)
-![Fancy logo](./img/CPS%20593_%20Assignment%204.png#gh-light-mode-only)
+![Dark Mode ERD](./images/CPS%20593_%20Assignment%204.png#gh-dark-mode-only)
+![Light Mode ERD](./images/CPS%20593_%20Assignment%204.png#gh-light-mode-only)
 ### User Entity:
 The user entity is the entity that is used to create a new user. This entity has the following: 
 - User ID (Primary Key to identify the user in the database)
@@ -82,12 +82,30 @@ To sucessfully be able run the project, you must install the following:
 - npm install express
 - npm install nodemon --save-dev
 - Under the scripts in the package.json file, add the following:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"dev": "nodemon index.js"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- "dev": "nodemon index.js"
 - npm install mysql2
 - To then run the project, you must do the following:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- open the index.html file with live server if you have it.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Then run the following command in the terminal:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* npm run dev
+
+## Snapshots of Different Pages:
+![Dark Mode Registration](./images/Registration.png#gh-dark-mode-only)
+![Light Mode Registration](./images/Registration.png#gh-light-mode-only)
+
+![Dark Mode Logging In](./images/Logging-In.png#gh-dark-mode-only)
+![Light Mode Logging In](./images/Logging-In.png#gh-light-mode-only)
+
+![Dark Mode Creating Group ](./images/CreatingGroup.png#gh-dark-mode-only)
+![Light Mode Creating Group](./images/CreatingGroup.png#gh-light-mode-only)
+
+![Dark Mode All Groups](./images/AllGroups.png#gh-dark-mode-only)
+![Light Mode All Groups](./images/AllGroups.png#gh-light-mode-only)
+
+![Dark Mode Deleting Group ](./images/DeleteingGroup.png#gh-dark-mode-only)
+![Light Mode Deleting Group](./images/DeleteingGroup.png#gh-light-mode-only)
+
+
 
 
 
