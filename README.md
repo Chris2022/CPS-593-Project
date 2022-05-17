@@ -44,6 +44,8 @@ Other than that, the project works, but it is just missing more funcionality tha
 
 ## Entity Relationship Diagram:
 <img src="img/CPS 593_ Assignment 4.png" alt="My ERD">
+![Termux Logo](img/CPS 593_ Assignment 4.png#gh-dark-mode-only)
+![Termux Logo](img/CPS 593_ Assignment 4.png#gh-light-mode-only)
 
 
 
