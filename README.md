@@ -1,22 +1,47 @@
-# CPS-593-Project
-***This Git Repository is for my project that I will be working on for the Spring 2022 Semester in CPS 593: Web Development at the State University of New York at New Paltz***
+# Task Bud
 
-**This text file contains a short description about what I plan on doing for this project.**
+## Description:
+Task Bud is a web application that is meant to allow users to create new groups and 
+within those groups be able create various tasks and add a schedule to those tasks.
+This project is still a work in progress and is not meant to be used as a final product.
+Currently what a user can do is, create an account, login, and then be able to navigate to
+the groups page to create a new group. The user is able to create a new group by entering
+a name that will be used to identify the group. Once they click the create button, the user is
+then able to see the group they just created and all other groups that they have created. A user
+can also delete a group by clicking the delete button. There is so much more that needs to be done
+to make this project a full functioning application. My future plans for this project are to
+be able to implement the functionality to add tasks to a group, and to add a schedule to a task. I
+would like to also make sure a group/task/schedule can be edited/deleted. I would also like to in the
+oveview page on the user dashboard, be able to showcase all the groups a user has created, the 
+completed tasks, and the tasks that are due to be completed. Also I would like to display the most
+recent tasks that have been created, to which group they belong, and the status of the task. I also
+would like to continue to fully develop the functionality of the user profile page. I would like to add the functionality for a user to edit their profile and be able to delete their account.
+
+## Bugs: 
+There are some small issues with this project.One of the issues I had is if a user tries to create a 
+group that already exists, there should be an alert to the user that the group already exists. The error
+message shows in the console, however, this message to a non computer science person is not very
+clear. This is one of the issues I wanted to correct, but am still working on fixing it.
+
+Another small issue I had was when a user logs in and is directed to their dashboard, I wanted to
+have a header that shows the name of the user. However, I was not able to get the name of the user to 
+display in the header. This is a small little issue that I wanted to fix, but am still working on it.
+
+Other than that, the project works, but it is just missing more funcionality that I will be workign on adding.
+
+## Front End Technologies/Frameworks/Languages:
+- HTML
+- CSS 
+- Node.js
+- Bulma version 0.9.3
+- Bootstrap Version 5.1.3
 
 
-Current Idea:
+## Back End Technologies/Frameworks/Languages:
+- Express.js
+- MySQL
+- Node.js
 
-My current idea is to create a task management web application. My end goal is to make a very simple 
-(to-use) and optimal task management application. This task managemen application can be used by 
-individual users to efficiently organize and prioritize tasks. Users can order their tasks however 
-they please, be able to view progress on projects they have implemented, be notified on due dates 
-or missed dates, and be able to update any details regarding the project or task they have. Information
-will be stored in a database that way I can keep track of all the tasks and projects a user may have. 
-A user will also be able to add tasks ahead of the current day/week/month. My goal is to help the user
-improve their productivity and decrease stress by creating an application that can help them keep track
-of various projects, duties, and tasks. My goal is for this application to help users of all ages and who have
-various types of responsibilites, tasks, and projects. My biggest goal is to keep this application simple to
-use, but to handle any kind of task or project a user may throw at it.
 
 
 
