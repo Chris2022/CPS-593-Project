@@ -90,18 +90,19 @@ To sucessfully be able run the project, you must install the following:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* npm run dev
 
 ## Snapshots of Different Pages:
+### Registration Page:
 ![Dark Mode Registration](./images/Registration.png#gh-dark-mode-only)
 ![Light Mode Registration](./images/Registration.png#gh-light-mode-only)
-
+### Login Page:
 ![Dark Mode Logging In](./images/Logging-In.png#gh-dark-mode-only)
 ![Light Mode Logging In](./images/Logging-In.png#gh-light-mode-only)
-
+### Creating a new Group
 ![Dark Mode Creating Group ](./images/CreatingGroup.png#gh-dark-mode-only)
 ![Light Mode Creating Group](./images/CreatingGroup.png#gh-light-mode-only)
-
+### Viewing all of the groups
 ![Dark Mode All Groups](./images/AllGroups.png#gh-dark-mode-only)
 ![Light Mode All Groups](./images/AllGroups.png#gh-light-mode-only)
-
+### Deleting a group
 ![Dark Mode Deleting Group ](./images/DeleteingGroup.png#gh-dark-mode-only)
 ![Light Mode Deleting Group](./images/DeleteingGroup.png#gh-light-mode-only)
 
