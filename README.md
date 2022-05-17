@@ -27,7 +27,7 @@ Another small issue I had was when a user logs in and is directed to their dashb
 have a header that shows the name of the user. However, I was not able to get the name of the user to 
 display in the header. This is a small little issue that I wanted to fix, but am still working on it.
 
-Other than that, the project works, but it is just missing more funcionality that I will be workign on adding.
+Other than that, the project works, but it is just missing more funcionality that I will be working on adding.
 
 ## Front End Technologies/Frameworks/Languages:
 - HTML
