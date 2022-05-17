@@ -31,7 +31,9 @@ Other than that, the project works, but it is just missing more funcionality tha
 
 ## Front End Technologies/Frameworks/Languages:
 - HTML
-- CSS 
+- CSS
+- Animate.css (animation library) version 4.1.1
+- Font Awesome (icons)
 - Node.js
 - Bulma version 0.9.3
 - Bootstrap Version 5.1.3
@@ -73,6 +75,19 @@ The schedule entity is the entity that is used to create a new schedule. This en
 - Task ID (Foreign Key to identify the task that the schedule belongs to)
 - Schedule Date (Date the schedule is due)
 - Schedule Time (Time the schedule is due)
+
+## Installation:
+To sucessfully be able run the project, you must install the following:
+- npm init
+- npm install express
+- npm install nodemon --save-dev
+- Under the scripts in the package.json file, add the following:
+    "dev": "nodemon index.js"
+- npm install mysql2
+- To then run the project, you must do the following:
+open the index.html file with live server if you have it.
+Then run the following command in the terminal:
+npm run dev
 
 
 
