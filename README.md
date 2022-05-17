@@ -43,7 +43,8 @@ Other than that, the project works, but it is just missing more funcionality tha
 - Node.js
 
 ## Entity Relationship Diagram:
-![Entity Diagram](img/CPS 593_ Assignment 4.png)
+<img src="img/CPS 593_ Assignment 4.png" alt="My ERD">
+
 
 
 
