@@ -43,9 +43,8 @@ Other than that, the project works, but it is just missing more funcionality tha
 - Node.js
 
 ## Entity Relationship Diagram:
-<img src="img/CPS 593_ Assignment 4.png" alt="My ERD">
-![Termux Logo](img/CPS 593_ Assignment 4.png#gh-dark-mode-only)
-![Termux Logo](img/CPS 593_ Assignment 4.png#gh-light-mode-only)
+![Fancy logo](./img/CPS%20593_%20Assignment%204.png#gh-dark-mode-only)
+![Fancy logo](./img/CPS%20593_%20Assignment%204.png#gh-light-mode-only)
 
 
 
