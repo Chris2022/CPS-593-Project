@@ -47,33 +47,32 @@ Other than that, the project works, but it is just missing more funcionality tha
 ![Fancy logo](./img/CPS%20593_%20Assignment%204.png#gh-light-mode-only)
 ### User Entity:
 The user entity is the entity that is used to create a new user. This entity has the following: 
-- User ID
-- User Name
-- User Email
-- User First Name
-- User Last Name
-- User Password
+- User ID (Primary Key to identify the user in the database)
+- User Name (Name the user will use to login)
+- User First Name (First name of the user)
+- User Last Name (Last name of the user)
+- User Password (Password the user will use to login)
 
 ### Group Entity:
 The group entity is the entity that is used to create a new group. This entity has the following:
-- Group ID
-- Group Name
-- User ID
+- Group ID (Primary Key to identify the group in the database)
+- Group Name (Name the group will use to identify the group)
+- User ID (Foreign Key to identify the user that created the group)
 
 ### Task Entity:
 The task entity is the entity that is used to create a new task. This entity has the following:
-- Task ID
-- Task Name
-- Task Description
-- Group ID
-- User ID
+- Task ID (Primary Key to identify the task in the database)
+- Task Name (Name the task will use to identify the task)
+- Task Description (Description of the task)
+- Group ID  (Foreign Key to identify the group that the task belongs to)
+- User ID (Foreign Key to identify the user that created the task)
 
 ### Schedule Entity:
 The schedule entity is the entity that is used to create a new schedule. This entity has the following:
-- Schedule ID
-- Task ID
-- Schedule Date
-- Schedule Time
+- Schedule ID (Primary Key to identify the schedule in the database)
+- Task ID (Foreign Key to identify the task that the schedule belongs to)
+- Schedule Date (Date the schedule is due)
+- Schedule Time (Time the schedule is due)
 
 
 
