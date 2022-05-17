@@ -45,6 +45,35 @@ Other than that, the project works, but it is just missing more funcionality tha
 ## Entity Relationship Diagram:
 ![Fancy logo](./img/CPS%20593_%20Assignment%204.png#gh-dark-mode-only)
 ![Fancy logo](./img/CPS%20593_%20Assignment%204.png#gh-light-mode-only)
+### User Entity:
+The user entity is the entity that is used to create a new user. This entity has the following: 
+- User ID
+- User Name
+- User Email
+- User First Name
+- User Last Name
+- User Password
+
+### Group Entity:
+The group entity is the entity that is used to create a new group. This entity has the following:
+- Group ID
+- Group Name
+- User ID
+
+### Task Entity:
+The task entity is the entity that is used to create a new task. This entity has the following:
+- Task ID
+- Task Name
+- Task Description
+- Group ID
+- User ID
+
+### Schedule Entity:
+The schedule entity is the entity that is used to create a new schedule. This entity has the following:
+- Schedule ID
+- Task ID
+- Schedule Date
+- Schedule Time
 
 
 
