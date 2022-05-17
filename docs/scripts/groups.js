@@ -35,8 +35,10 @@ function getGroupInfo(e) {
     ).then((data) => {
         console.log("hi")
         if (!data.message) {
+            console.log(data)
             const ul = document.getElementById("myGroup");
             if (ul) {
+                ul.innerHTML="";
                 for (let index = 0; index < data.length; index++) {
                    ul.innerHTML += ` <li>
                    <div class="card" id="GROUPS" >
@@ -46,10 +48,13 @@ function getGroupInfo(e) {
                    <a href="#" class="card-link" id="${data[index].group_name}">Delete</a>
                     </div></div>
                     </li>`;
+                }
+                for (let index = 0; index < data.length; index++) {
                     let btn = document.getElementById(`${data[index].group_name}`);
                     if(btn) btn.addEventListener("click", deleteGroup);
                 }
             }
+
         }
     });
 }
@@ -57,12 +62,11 @@ function getGroupInfo(e) {
 // if(erase_from_existance) erase_from_existance.addEventListener("click", deleteGroup);
 const myGroup = document.getElementById("myGroup");
 
+
 function deleteGroup(e) {
-    console.log(e.target.parentElement.parentElement)
-    console.log(e.target.id)
+    const userId = getCurrentUser().user_id;
     let group_name_id = e.target.id;
-    console.log(group_name_id);
-    let div = e.target.parentElement.parentElement;
+    let div = e.target.parentElement.parentElement.parentElement; //this is li
     myGroup.removeChild(div);
     e.preventDefault();
     fetchData('/groups/delete', {group_name: group_name_id, user_id: userId}, "DELETE")
