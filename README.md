@@ -17,7 +17,7 @@ completed tasks, and the tasks that are due to be completed. Also I would like t
 recent tasks that have been created, to which group they belong, and the status of the task. I also
 would like to continue to fully develop the functionality of the user profile page. I would like to add the functionality for a user to edit their profile and be able to delete their account.
 
-## Bugs: 
+## Issues: 
 There are some small issues with this project.One of the issues I had is if a user tries to create a 
 group that already exists, there should be an alert to the user that the group already exists. The error
 message shows in the console, however, this message to a non computer science person is not very
@@ -41,6 +41,9 @@ Other than that, the project works, but it is just missing more funcionality tha
 - Express.js
 - MySQL
 - Node.js
+
+## Entity Relationship Diagram:
+![Alt text](./images/ERD.png)
 
 
 
